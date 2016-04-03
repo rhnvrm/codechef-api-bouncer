@@ -17,6 +17,7 @@ def helloWorld():
   return "Hello, world! <a href='https://github.com/rhnvrm/codechef-api-bouncer'>Fork me on GitHub!</a>"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 
 
