@@ -1,0 +1,6 @@
+{
+  "name": "Codechef API Bouncer",
+  "description": "A small flask API that bounces the Codechef API to bypass the CORS restriction",
+  "repository": "https://github.com/rhnvrm/codechef-api-bouncer/",
+  "keywords": ["python", "flask", "codechef", "api"]
+}
