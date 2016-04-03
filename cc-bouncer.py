@@ -1,3 +1,4 @@
+import os
 import requests as re
 from flask import Flask, jsonify
 from flask.ext.cors import CORS
