@@ -13,6 +13,12 @@ def rankings_bouncer(comp, my_filter):
 	#print x.text
 	return jsonify(result=x)
 
+@app.route('/autocomplete/<comp>/<my_filter>')
+def autocomplete(comp, my_filter):
+	x = re.get('https://www.codechef.com/api/rankings/'+comp+'/autocomplete/?qparam=institution&institution='+my_filter).json()
+	#print x.text
+	return jsonify(result=x)	
+
 @app.route("/")
 def helloWorld():
   return "Hello, world! <a href='https://github.com/rhnvrm/codechef-api-bouncer'>Fork me on GitHub!</a>"
